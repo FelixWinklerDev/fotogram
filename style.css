@@ -5,12 +5,6 @@ body {
   font-family: 'Figtree-ExtraBold';
 }
 
-.image_gallery {
-  height: 150px;
-  width: 150px;
-  object-fit: cover;
-}
-
 header {
   background-color: #09212a;
 }
@@ -46,6 +40,12 @@ footer {
   width: 200px;
   padding: 20px;
   margin-left: 180px;
+}
+
+.image_gallery {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
 }
 
 .footer_img {
