@@ -2,10 +2,20 @@ body {
   margin: 0;
   background-color: #06171e;
   max-width: 1920px;
+  font-family: 'Figtree-ExtraBold';
 }
 
 header {
   background-color: #09212a;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1920px;
+  height: 100%;
+  color: white;
 }
 
 footer {
@@ -21,6 +31,7 @@ footer {
   justify-content: center;
   padding-top: 25px;
   padding-bottom: 25px;
+  flex-shrink: 0;
 }
 
 .header_img {
@@ -34,4 +45,11 @@ footer {
   align-items: center;
   justify-content: center;
   width: 300px;
+}
+
+
+
+@font-face {
+  font-family: 'Figtree-ExtraBold';
+  src: url(./fonts/Figtree-ExtraBold.ttf);
 }
