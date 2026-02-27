@@ -1,16 +1,16 @@
 let myImages = [
-  './myImages/mypic1.jpg',
-  'pic10.jpg',
-  'pic11.jpg',
-  'pic12.jpg',
-  'pic2.jpg',
-  'pic3.png',
-  'pic4.jpg',
-  'pic5.jpg',
-  'pic6.jpg',
-  'pic7.jpg',
-  'pic8.jpg',
-  'pic9.jpg',
+  './img/mypic1.jpg',
+  './img/pic10.jpg',
+  './img/pic11.jpg',
+  './img/pic12.jpg',
+  './img/pic2.jpg',
+  './img/pic3.png',
+  './img/pic4.jpg',
+  './img/pic5.jpg',
+  './img/pic6.jpg',
+  './img/pic7.jpg',
+  './img/pic8.jpg',
+  './img/pic9.jpg',
 ];
 
 function renderPictures(array) {
