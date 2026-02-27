@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  background-color: #06171e;
+}
+
+header {
+  background-color: #09212a;
+}
+
+footer {
+  margin: 0;
+  background-image: url(./assets/footer_background.png);
+  background-position: top;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header_img {
+  width: 200px;
+  padding: 20px;
+  margin-left: 180px;
+}
+
+.footer_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
