@@ -5,6 +5,12 @@ body {
   font-family: 'Figtree-ExtraBold';
 }
 
+.image_gallery {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+
 header {
   background-color: #09212a;
 }
@@ -13,9 +19,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   max-width: 1920px;
   height: 100%;
   color: white;
+  margin-left: 50px;
 }
 
 footer {
@@ -46,8 +54,6 @@ footer {
   justify-content: center;
   width: 300px;
 }
-
-
 
 @font-face {
   font-family: 'Figtree-ExtraBold';

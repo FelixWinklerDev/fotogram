@@ -18,7 +18,7 @@ function renderPictures(array) {
 
   for (let index = 1; index <= 12; index++) {
     container.innerHTML += /*html*/ `
-          <img src="${myImages[index - 1]}" alt="">
+          <img class="image_gallery" src="${myImages[index - 1]}" alt="">
      
     `;
   }
