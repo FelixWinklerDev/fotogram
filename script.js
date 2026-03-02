@@ -18,18 +18,17 @@ function renderPictures(array) {
 
   for (let index = 0; index < myImages.length; index++) {
     container.innerHTML += /*html*/ `
-          <button aria-haspopup="dialog" aria-controls="imageOverlay" id="image_button" onclick="openDialog()"><img class="mainImages" src="${myImages[index]}" alt="pictures"></button>
+          <img id="mainImages" onclick="openDialog()" src="${myImages[index]}" alt="">
     `;
-    console.log(renderPictures);
   }
 }
 
-let dialogRef = document.getElementById('imageOverlay');
-
 function openDialog() {
+  const dialogRef = document.getElementById('imageOverlay');
   dialogRef.showModal();
 }
 
 function closeDialog() {
+  const dialogRef = document.getElementById('imageOverlay');
   dialogRef.close();
 }

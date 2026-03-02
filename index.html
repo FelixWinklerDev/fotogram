@@ -18,15 +18,18 @@
       <dialog id="imageOverlay" aria-labelledby="image-title" aria-describedby="">
         <header>
           <h2 class="image-title"></h2>
-          <button aria-label="Dialog schließen" onclick="exitDialog()"></button>
+          <button class="exit-btn" aria-label="Dialog schließen" onclick="exitDialog()"><img src="./assets/close.png"
+              alt=""></button>
         </header>
         <main>
           <img src="" alt="">
         </main>
-        <footer>
-          <button aria-label="Vorheriges Bild"></button>
-          <p aria-label="Anzahl der Fotos ${index}"></p>
-          <button aria-label="Nächstes Bild"></button>
+        <footer id="overlay_footer">
+          <button class="left-btn" aria-label="Vorheriges Bild"><img class="left-btn-img" src="./assets/arrow.png"
+              alt=""></button>
+          <p aria-label="Anzahl der Fotos ${[index]}"></p>
+          <button class="right-btn" aria-label="Nächstes Bild"><img class="right-btn-img" src="./assets/arrow.png"
+              alt=""></button>
         </footer>
       </dialog>
     </section>
