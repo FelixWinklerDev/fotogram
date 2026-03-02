@@ -1,5 +1,5 @@
 let myImages = [
-  './img/mypic1.jpg',
+  './img/pic1.jpg',
   './img/pic10.jpg',
   './img/pic11.jpg',
   './img/pic12.jpg',
@@ -16,10 +16,11 @@ let myImages = [
 function renderPictures(array) {
   let container = document.getElementById('photo_gallery');
 
-  for (let index = 1; index <= 12; index++) {
+  for (let index = 0; index < myImages.length; index++) {
     container.innerHTML += /*html*/ `
-          <img class="image_gallery" src="${myImages[index - 1]}" alt="">
+          <img class="image_gallery" src="${myImages[index]}" alt="">
      
     `;
+    console.log(renderPictures);
   }
 }
