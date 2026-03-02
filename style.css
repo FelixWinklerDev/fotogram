@@ -7,20 +7,23 @@ body {
 
 header {
   background-color: #09212a;
+  max-width: 1920px;
+}
+
+h1 {
+  font-size: 56px;
 }
 
 main {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   max-width: 1920px;
   height: 100%;
   color: white;
-  margin-top: 50px;
-  margin-left: 250px;
-  margin-right: 250px;
-  gap: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  gap: 40px;
 }
 
 footer {
@@ -36,7 +39,6 @@ footer {
   justify-content: center;
   padding-top: 25px;
   padding-bottom: 25px;
-  flex-shrink: 0;
 }
 
 .header_img {
@@ -45,10 +47,29 @@ footer {
   margin-left: 180px;
 }
 
-.image_gallery {
+#image_button {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0;
+}
+
+#photo_gallery {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 16px;
+  padding-bottom: 150px;
+}
+
+.mainImages {
   height: 150px;
   width: 150px;
   object-fit: cover;
+  border: solid 2px #124658;
+  border-radius: 16px;
 }
 
 .footer_img {

@@ -15,7 +15,20 @@
   <main id="main-wrapper">
     <h1>Your pesonal photo album</h1>
     <section id="photo_gallery">
-
+      <dialog id="imageOverlay" aria-labelledby="image-title" aria-describedby="">
+        <header>
+          <h2 class="image-title"></h2>
+          <button aria-label="Dialog schließen" onclick="exitDialog()"></button>
+        </header>
+        <main>
+          <img src="" alt="">
+        </main>
+        <footer>
+          <button aria-label="Vorheriges Bild"></button>
+          <p aria-label="Anzahl der Fotos ${index}"></p>
+          <button aria-label="Nächstes Bild"></button>
+        </footer>
+      </dialog>
     </section>
   </main>
   <footer>
