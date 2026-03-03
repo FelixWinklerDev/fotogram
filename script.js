@@ -23,11 +23,11 @@ function renderPictures(array) {
   }
 }
 
-function openDialog(number) {
+function openDialog(rot) {
   const dialogRef = document.getElementById('imageOverlay');
   dialogRef.showModal();
   dialogRef.classList.add('opened');
-  imgTravel(index);
+  imgTravel(rot);
 }
 
 function closeDialog() {
@@ -51,15 +51,12 @@ let overlayImages = [
   './img/pic9.jpg',
 ];
 
-function imgTravel(index) {
+function imgTravel(rot) {
   console.log(1);
   let overlayContainer = document.getElementById('showImage');
-
-  for (let index = 0; index < overlayImages.length; index++) {
-    overlayContainer.innerHTML += /*html*/ `
-          <img id="mainImagesInOverlay" src="${overlayImages[index]}" alt="">
-    `;
-  }
+  overlayContainer.innerHTML = /*html*/ `
+        <img id="mainImagesInOverlay" src="${overlayImages[rot]}" alt="">
+        `;
 }
 
 //function imgTravel(index) {
