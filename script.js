@@ -36,33 +36,17 @@ function closeDialog() {
   dialogRef.close();
 }
 
-let overlayImages = [
-  './img/pic1.jpg',
-  './img/pic10.jpg',
-  './img/pic11.jpg',
-  './img/pic12.jpg',
-  './img/pic2.jpg',
-  './img/pic3.png',
-  './img/pic4.jpg',
-  './img/pic5.jpg',
-  './img/pic6.jpg',
-  './img/pic7.jpg',
-  './img/pic8.jpg',
-  './img/pic9.jpg',
-];
-
 function imgTravel(rot) {
-  console.log(1);
   let overlayContainer = document.getElementById('showImage');
   overlayContainer.innerHTML = /*html*/ `
-        <img id="mainImagesInOverlay" src="${overlayImages[rot]}" alt="">
+        <img id="mainImagesInOverlay" src="${myImages[rot]}" alt="">
         `;
+  updateCounter(rot);
 }
 
-//function imgTravel(index) {
-//  let placeholder = document.getElementById('showImage');
-//  placeholder.innerHTML =
-//    /*html*/
-//    `<img src="${myImages[index]}" alt="">;
-//  `;
-//}
+function updateCounter(index) {
+  let counter = document.getElementById(img_counter);
+  let currentNum = index + 1;
+  let totalNum = overlayImages.length;
+  counter.innerText = `${currentNum} / ${totalNum}`;
+}
