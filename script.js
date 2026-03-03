@@ -37,6 +37,8 @@ function closeDialog() {
 
 function imgTravel(index) {
   let placeholder = document.getElementById('showImage');
-  placeholder.innerHTML = /*html*/ `<img src="myImages[index]" alt="">;
+  placeholder.innerHTML =
+    /*html*/
+    `<img src="myImages[index]" alt="">;
   `;
 }

@@ -116,15 +116,15 @@ h2 {
 .left-btn {
   background-color: rgba(0, 0, 0, 0);
   border-width: 0;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   cursor: pointer;
 }
 
 .left-btn-img {
   transform: scaleX(-1);
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
 }
 
 .left-btn-img:hover {
@@ -134,14 +134,14 @@ h2 {
 .right-btn {
   background-color: rgba(0, 0, 0, 0);
   border-width: 0;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   cursor: pointer;
 }
 
 .right-btn-img {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
 }
 
 .right-btn-img:hover {
@@ -149,8 +149,13 @@ h2 {
 }
 
 .exit-btn {
-  background-color: #06171e;
+  background-color: rgba(0, 0, 0, 0);
   border: none;
+  cursor: pointer;
+}
+
+.exit-btn:hover {
+  background-color: #06171e
 }
 
 @font-face {
