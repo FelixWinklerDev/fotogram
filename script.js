@@ -51,7 +51,8 @@ let overlayImages = [
   './img/pic9.jpg',
 ];
 
-function imgTravel(array) {
+function imgTravel(index) {
+  console.log(1);
   let overlayContainer = document.getElementById('showImage');
 
   for (let index = 0; index < overlayImages.length; index++) {
