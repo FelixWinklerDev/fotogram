@@ -15,9 +15,11 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  font-size: 52px;
+#image_title {
+  font-size: 36px;
+  color: white;
   margin: 0;
+  padding-left: 45px;
 }
 
 #main-wrapper {
@@ -130,7 +132,7 @@ h2 {
   align-items: center;
   gap: 50px;
   background-color: #09212a;
-  padding: 20px;
+  padding: 10px;
 }
 
 .footer_img {
@@ -180,10 +182,15 @@ h2 {
   filter: brightness(150%);
 }
 
+#img_counter {
+  color: white;
+}
+
 .exit-btn {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   cursor: pointer;
+  margin-right: 45px;
 }
 
 .exit-btn:hover {

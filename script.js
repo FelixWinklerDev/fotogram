@@ -13,6 +13,21 @@ let myImages = [
   './img/pic9.jpg',
 ];
 
+let myTitles = [
+  'Seelandschaft',
+  'Leopardenbabys',
+  'Bergaussicht',
+  'eisüberwachsener Baum',
+  'Anime Stadt',
+  'Gewitterwolken',
+  'Vogel A',
+  'Orkan vom Weltall',
+  'Winterlandschaft am See',
+  'Ente',
+  'Felix an nachdenklichen Nächten',
+  'Vogel B',
+];
+
 function renderPictures(array) {
   let container = document.getElementById('photo_gallery');
 
@@ -42,11 +57,18 @@ function imgTravel(rot) {
         <img id="mainImagesInOverlay" src="${myImages[rot]}" alt="">
         `;
   updateCounter(rot);
+  updateTitle(rot);
 }
 
 function updateCounter(index) {
-  let counter = document.getElementById(img_counter);
+  let counter = document.getElementById('img_counter');
   let currentNum = index + 1;
-  let totalNum = overlayImages.length;
+  let totalNum = myImages.length;
   counter.innerText = `${currentNum} / ${totalNum}`;
+}
+
+function updateTitle(index) {
+  let updateTitle = document.getElementById('image_title');
+  let headerTitle = myTitles[index];
+  updateTitle.innerText = `${headerTitle}`;
 }
