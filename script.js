@@ -32,3 +32,7 @@ function closeDialog() {
   const dialogRef = document.getElementById('imageOverlay');
   dialogRef.close();
 }
+
+function imgTravel() {
+  openDialog.renderPictures.getElementById();
+}
