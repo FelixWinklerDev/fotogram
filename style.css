@@ -49,6 +49,11 @@ h2 {
   margin-left: 180px;
 }
 
+.header_btn {
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0;
+}
+
 #image_button {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
@@ -85,7 +90,6 @@ h2 {
   height: 800px;
   width: 1000px;
   background-color: #124658;
-  scrollbar-width: none;
   padding: 0;
   margin: 100px, 100px;
 }
@@ -127,6 +131,11 @@ h2 {
   align-items: center;
   justify-content: center;
   width: 300px;
+}
+
+.footer_btn {
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0;
 }
 
 .left-btn {

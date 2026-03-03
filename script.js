@@ -15,11 +15,10 @@ let myImages = [
 
 function renderPictures(array) {
   let container = document.getElementById('photo_gallery');
-  //container.innerHTML = '';
 
   for (let index = 0; index < myImages.length; index++) {
     container.innerHTML += /*html*/ `
-          <img id="mainImages" onclick="openDialog(${[index]})" src="${myImages[index]}" alt="">
+          <img id="mainImages" tabindex="0" onclick="openDialog(${[index]})" src="${myImages[index]}" alt="">
     `;
   }
 }
@@ -54,7 +53,6 @@ let overlayImages = [
 
 function imgTravel(array) {
   let overlayContainer = document.getElementById('showImage');
-  //container.innerHTML = '';
 
   for (let index = 0; index < overlayImages.length; index++) {
     overlayContainer.innerHTML += /*html*/ `
