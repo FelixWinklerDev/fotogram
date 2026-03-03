@@ -21,20 +21,20 @@
           <button class="exit-btn" aria-label="Dialog schließen" onclick="closeDialog()"><img src="./assets/close.png"
               alt=""></button>
         </header>
-        <main>
-          <img src="" alt="">
+        <main id="showImage">
+
         </main>
         <footer id="overlay_footer">
           <button class="left-btn" aria-label="Vorheriges Bild"><img class="left-btn-img" src="./assets/arrow.png"
               alt=""></button>
-          <p aria-label="Anzahl der Fotos ${[index]}"></p>
+          <p id="img_counter" aria-label="Anzahl der Fotos `${[index]}`"></p>
           <button class="right-btn" aria-label="Nächstes Bild"><img class="right-btn-img" src="./assets/arrow.png"
               alt=""></button>
         </footer>
       </dialog>
     </section>
   </main>
-  <footer>
+  <footer id="main_footer">
     <img class="footer_img" src="./logos/footer_img.png" alt="firmenlogo Devepoer Akademie ">
   </footer>
 </body>

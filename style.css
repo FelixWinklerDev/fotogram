@@ -32,10 +32,12 @@ main {
   gap: 40px;
 }
 
-footer {
+#main_footer {
   margin: 0;
   background-image: url(./assets/footer_background.png);
   background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
   max-width: 1920px;
   display: flex;
   align-items: center;
@@ -57,7 +59,7 @@ footer {
 }
 
 #photo_gallery {
-  width: 100%;
+  max-width: 1440px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,9 +81,9 @@ footer {
   height: 800px;
   width: 1000px;
   background-color: #124658;
+  scrollbar-width: none;
   padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 100px, 100px;
 }
 
 #overlayHeader {
@@ -90,9 +92,18 @@ footer {
   justify-content: space-between;
 }
 
+#showImage {
+  height: 100%;
+  width: 100%;
+}
+
 #overlay_footer {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: #09212a;
+  padding: 20px;
 }
 
 .footer_img {
@@ -137,7 +148,28 @@ footer {
   filter: brightness(150%);
 }
 
+.exit-btn {
+  background-color: #06171e;
+  border: none;
+}
+
 @font-face {
   font-family: 'Figtree-ExtraBold';
   src: url(./fonts/Figtree-ExtraBold.ttf);
+}
+
+@media(max-width: 615px) {
+  .header_img {
+    margin: 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer_img {
+    width: 200px;
+  }
 }

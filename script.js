@@ -15,17 +15,19 @@ let myImages = [
 
 function renderPictures(array) {
   let container = document.getElementById('photo_gallery');
+  //container.innerHTML = '';
 
   for (let index = 0; index < myImages.length; index++) {
     container.innerHTML += /*html*/ `
-          <img id="mainImages" onclick="openDialog()" src="${myImages[index]}" alt="">
+          <img id="mainImages" onclick="openDialog(${[index]})" src="${myImages[index]}" alt="">
     `;
   }
 }
 
-function openDialog() {
+function openDialog(number) {
   const dialogRef = document.getElementById('imageOverlay');
   dialogRef.showModal();
+  imgTravel(index);
 }
 
 function closeDialog() {
@@ -33,6 +35,8 @@ function closeDialog() {
   dialogRef.close();
 }
 
-function imgTravel() {
-  openDialog.renderPictures.getElementById();
+function imgTravel(index) {
+  let placeholder = document.getElementById('showImage');
+  placeholder.innerHTML = /*html*/ `<img src="myImages[index]" alt="">;
+  `;
 }
