@@ -27,18 +27,46 @@ function renderPictures(array) {
 function openDialog(number) {
   const dialogRef = document.getElementById('imageOverlay');
   dialogRef.showModal();
+  dialogRef.classList.add('opened');
   imgTravel(index);
 }
 
 function closeDialog() {
   const dialogRef = document.getElementById('imageOverlay');
+  dialogRef.classList.remove('opened');
   dialogRef.close();
 }
 
-function imgTravel(index) {
-  let placeholder = document.getElementById('showImage');
-  placeholder.innerHTML =
-    /*html*/
-    `<img src="myImages[index]" alt="">;
-  `;
+let overlayImages = [
+  './img/pic1.jpg',
+  './img/pic10.jpg',
+  './img/pic11.jpg',
+  './img/pic12.jpg',
+  './img/pic2.jpg',
+  './img/pic3.png',
+  './img/pic4.jpg',
+  './img/pic5.jpg',
+  './img/pic6.jpg',
+  './img/pic7.jpg',
+  './img/pic8.jpg',
+  './img/pic9.jpg',
+];
+
+function imgTravel(array) {
+  let overlayContainer = document.getElementById('showImage');
+  //container.innerHTML = '';
+
+  for (let index = 0; index < overlayImages.length; index++) {
+    overlayContainer.innerHTML += /*html*/ `
+          <img id="mainImagesInOverlay" src="${overlayImages[index]}" alt="">
+    `;
+  }
 }
+
+//function imgTravel(index) {
+//  let placeholder = document.getElementById('showImage');
+//  placeholder.innerHTML =
+//    /*html*/
+//    `<img src="${myImages[index]}" alt="">;
+//  `;
+//}
