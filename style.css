@@ -36,6 +36,7 @@ h1 {
 
 #main_footer {
   margin: 0;
+  width: 100%;
   background-image: url(./assets/footer_background.png);
   background-size: cover;
   display: flex;
@@ -43,6 +44,8 @@ h1 {
   justify-content: center;
   padding-top: 25px;
   padding-bottom: 25px;
+  position: fixed;
+  bottom: 0;
 }
 
 .header_img {
@@ -125,7 +128,6 @@ h1 {
 #mainImagesInOverlay {
   max-height: 600px;
   max-width: 1000px;
-  ;
 }
 
 #overlay_footer {
@@ -204,6 +206,25 @@ h1 {
   src: url(./fonts/Figtree-ExtraBold.ttf);
 }
 
+@media(max-width: 1439px) {
+  #main_footer {
+    position: relative;
+    bottom: 0;
+  }
+}
+
+@media(max-width: 1060px) {
+  #imageOverlay {
+    width: 700px;
+  }
+  #showImage {
+    width: 700px;
+  }
+  #mainImagesInOverlay {
+    max-width: 700px;
+  }
+}
+
 @media(max-width: 915px) {
   .header_img {
     margin: 0;
@@ -224,6 +245,40 @@ h1 {
   #main-wrapper {
     margin-left: 80px;
     margin-right: 80px;
+  }
+}
+
+@media(max-width: 760px) {
+  #imageOverlay {
+    width: 450px;
+  }
+  #showImage {
+    width: 450px;
+  }
+  #mainImagesInOverlay {
+    max-width: 450px;
+  }
+  #image_title {
+    font-size: 24px;
+    padding-left: 10px;
+  }
+  .exit-btn {
+    margin-right: 0;
+  }
+}
+
+@media(max-width: 510px) {
+  #imageOverlay {
+    width: 250px;
+  }
+  #showImage {
+    width: 250px;
+  }
+  #mainImagesInOverlay {
+    max-width: 250px;
+  }
+  #image_title {
+    font-size: 16px;
   }
 }
 
