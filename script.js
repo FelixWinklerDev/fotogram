@@ -5,7 +5,7 @@ let myImages = [
   './img/pic11.jpg',
   './img/pic12.jpg',
   './img/pic2.jpg',
-  './img/pic3.png',
+  './img/pic3.jpg',
   './img/pic4.jpg',
   './img/pic5.jpg',
   './img/pic6.jpg',
