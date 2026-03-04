@@ -28,12 +28,27 @@ let myTitles = [
   'Schneeammer',
 ];
 
+let myAltTextes = [
+  'eine wunderschöne Seelandschaft',
+  'zwei Leopardenbabys',
+  'eine schöne Bergaussicht',
+  'ein eisüberwachsener Baum',
+  'ein fiktives Stadtbild im Animestil',
+  'Gewitterwolken',
+  'eine Blaumeise',
+  'Orkan vom Weltall',
+  'eine Winterlandschaft am See',
+  'eine Moorente',
+  'ein Mensch in einer sternklaren Nacht',
+  'ein Schneeammer',
+];
+
 function renderPictures(array) {
   let container = document.getElementById('photo_gallery');
 
   for (let index = 0; index < myImages.length; index++) {
     container.innerHTML += /*html*/ `
-          <img id="mainImages" tabindex="0" onclick="openDialog(${[index]})" src="${myImages[index]}" alt="">
+          <img id="mainImages" tabindex="0" onclick="openDialog(${[index]})" src="${myImages[index]}" alt="${myAltTextes[index]}">
     `;
   }
 }
