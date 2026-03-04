@@ -20,12 +20,12 @@ let myTitles = [
   'eisüberwachsener Baum',
   'Anime Stadt',
   'Gewitterwolken',
-  'Vogel A',
+  'Blaumeise',
   'Orkan vom Weltall',
   'Winterlandschaft am See',
-  'Ente',
+  'Moorente',
   'Felix in nachdenklichen Nächten',
-  'Vogel B',
+  'Schneeammer',
 ];
 
 function renderPictures(array) {
