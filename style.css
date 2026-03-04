@@ -1,13 +1,12 @@
 body {
   margin: 0;
   background-color: #06171e;
-  max-width: 1920px;
   font-family: 'Figtree-ExtraBold';
 }
 
 header {
   background-color: #09212a;
-  max-width: 1920px;
+  width: 100%;
 }
 
 h1 {
@@ -26,11 +25,7 @@ h1 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 1440px;
-  height: 100%;
   color: white;
-  margin-left: 170px;
-  margin-right: 170px;
   gap: 40px;
 }
 
@@ -39,6 +34,8 @@ h1 {
   width: 100%;
   background-image: url(./assets/footer_background.png);
   background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,6 +73,8 @@ h1 {
   padding-bottom: 150px;
   opacity: 1;
   transition: opacity 100ms linear;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #mainImages {
@@ -208,7 +207,7 @@ h1 {
 
 @media(max-width: 1439px) {
   #main_footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
   }
 }
@@ -222,6 +221,10 @@ h1 {
   }
   #mainImagesInOverlay {
     max-width: 700px;
+  }
+  #main_footer {
+    position: relative;
+    bottom: 0;
   }
 }
 
@@ -280,9 +283,6 @@ h1 {
   #image_title {
     font-size: 16px;
   }
-}
-
-@media(max-width: 496px) {
   #main-wrapper {
     margin-left: 10px;
     margin-right: 10px;

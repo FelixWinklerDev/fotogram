@@ -13,26 +13,28 @@
     <button class="header_btn" aria-label="Firmenlogo und Button Fotogram"><a href="#"><img class="header_img"
           src="./logos/logo.png" alt="firmenlogo Fotogram"></a></button>
   </header>
-  <main id="main-wrapper">
-    <h1 aria-label="Hauptüberschrift dein persönliches Fotoalbum">Your pesonal photo album</h1>
-    <section id="photo_gallery">
-      <dialog id="imageOverlay" aria-labelledby="image-title" aria-describedby="">
-        <header id="overlayHeader">
-          <h2 id="image_title"></h2>
-          <button class="exit-btn" aria-label="Dialog schließen" onclick="closeDialog()"><img src="./assets/close.png"
-              alt=""></button>
-        </header>
-        <main id="showImage" aria-label="Bereich des Bildes">
+  <main>
+    <div id="main-wrapper">
+      <h1 aria-label="Hauptüberschrift dein persönliches Fotoalbum">Your pesonal photo album</h1>
+      <section id="photo_gallery">
+    </div>
+    <dialog id="imageOverlay" aria-labelledby="image-title" aria-describedby="">
+      <header id="overlayHeader">
+        <h2 id="image_title"></h2>
+        <button class="exit-btn" aria-label="Dialog schließen" onclick="closeDialog()"><img src="./assets/close.png"
+            alt=""></button>
+      </header>
+      <main id="showImage" aria-label="Bereich des Bildes">
 
-        </main>
-        <footer aria-label="Fußzeile des Overlays" id="overlay_footer">
-          <button id="previous-btn" aria-label="Vorheriges Bild" onclick="previous()"><img class="left-btn-img"
-              src="./assets/arrow.png" alt="linker Pfeil"></button>
-          <p id="img_counter" aria-label="Anzahl der Fotos"></p>
-          <button id="next-btn" aria-label="Nächstes Bild" onclick="next()"><img class="right-btn-img"
-              src="./assets/arrow.png" alt="rechter Pfeil"></button>
-        </footer>
-      </dialog>
+      </main>
+      <footer aria-label="Fußzeile des Overlays" id="overlay_footer">
+        <button id="previous-btn" aria-label="Vorheriges Bild" onclick="previous()"><img class="left-btn-img"
+            src="./assets/arrow.png" alt="linker Pfeil"></button>
+        <p id="img_counter" aria-label="Anzahl der Fotos"></p>
+        <button id="next-btn" aria-label="Nächstes Bild" onclick="next()"><img class="right-btn-img"
+            src="./assets/arrow.png" alt="rechter Pfeil"></button>
+      </footer>
+    </dialog>
     </section>
   </main>
   <footer id="main_footer">
