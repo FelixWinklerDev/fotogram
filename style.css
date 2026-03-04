@@ -151,7 +151,7 @@ h1 {
   border-width: 0;
 }
 
-.previous-btn {
+#previous-btn {
   background-color: rgba(0, 0, 0, 0);
   border-width: 0;
   height: 40px;
@@ -169,7 +169,7 @@ h1 {
   filter: brightness(150%);
 }
 
-.next-btn {
+#next-btn {
   background-color: rgba(0, 0, 0, 0);
   border-width: 0;
   height: 40px;

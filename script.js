@@ -1,3 +1,4 @@
+// an array for the images
 let myImages = [
   './img/pic1.jpg',
   './img/pic10.jpg',
@@ -13,6 +14,7 @@ let myImages = [
   './img/pic9.jpg',
 ];
 
+// an array for the titles
 let myTitles = [
   'Seelandschaft',
   'Leopardenbabys',
@@ -28,6 +30,7 @@ let myTitles = [
   'Schneeammer',
 ];
 
+// an array for the Alt textes
 let myAltTextes = [
   'eine wunderschöne Seelandschaft',
   'zwei Leopardenbabys',
@@ -43,6 +46,7 @@ let myAltTextes = [
   'ein Schneeammer',
 ];
 
+// onloadevent which renders the Pictures in the main section
 function renderPictures(array) {
   let container = document.getElementById('photo_gallery');
 
@@ -53,6 +57,7 @@ function renderPictures(array) {
   }
 }
 
+// onclickevent which opens the dialog if you click a image
 function openDialog(rot) {
   const dialogRef = document.getElementById('imageOverlay');
   dialogRef.showModal();
@@ -60,21 +65,24 @@ function openDialog(rot) {
   imgTravel(rot);
 }
 
+// onclickevent which closing the Dialog
 function closeDialog() {
   const dialogRef = document.getElementById('imageOverlay');
   dialogRef.classList.remove('opened');
   dialogRef.close();
 }
 
+// adds the image from the array in the Dialog Main section
 function imgTravel(rot) {
   let overlayContainer = document.getElementById('showImage');
   overlayContainer.innerHTML = /*html*/ `
-        <img id="mainImagesInOverlay" src="${myImages[rot]}" alt="">
+        <img id="mainImagesInOverlay" src="${myImages[rot]}" alt="${myAltTextes[rot]}">
         `;
   updateCounter(rot);
   updateTitle(rot);
 }
 
+// adds the index in the p tag (it's working like a counter)
 function updateCounter(index) {
   let counter = document.getElementById('img_counter');
   let currentNum = index + 1;
@@ -82,14 +90,17 @@ function updateCounter(index) {
   counter.innerText = `${currentNum} / ${totalNum}`;
 }
 
+// adds the Title in the Dialog Header
 function updateTitle(index) {
   let updateTitle = document.getElementById('image_title');
   let headerTitle = myTitles[index];
   updateTitle.innerText = `${headerTitle}`;
 }
 
+// global index for the imgTravel function
 currentIndex = 0;
 
+// onlickevent which gave you the previous picture and jumps to the end by 1/12
 function previous() {
   currentIndex--;
   if (currentIndex < 0) {
@@ -98,6 +109,7 @@ function previous() {
   imgTravel(currentIndex);
 }
 
+// onlickevent which gave you the next picture and jumps to the start by 12/12
 function next() {
   currentIndex++;
   if (currentIndex > myImages.length - 1) {
