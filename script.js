@@ -46,7 +46,7 @@ let myAltTextes = [
   'ein Schneeammer',
 ];
 
-// onloadevent which renders the Pictures in the main section
+// onload event which renders the Pictures in the main section
 function renderPictures(array) {
   let container = document.getElementById('photo_gallery');
 
@@ -57,7 +57,7 @@ function renderPictures(array) {
   }
 }
 
-// onclickevent which opens the dialog if you click a image
+// onclick event which opens the dialog if you click a image
 function openDialog(rot) {
   const dialogRef = document.getElementById('imageOverlay');
   dialogRef.showModal();
@@ -65,7 +65,7 @@ function openDialog(rot) {
   imgTravel(rot);
 }
 
-// onclickevent which closing the Dialog
+// onclick event which closing the Dialog
 function closeDialog() {
   const dialogRef = document.getElementById('imageOverlay');
   dialogRef.classList.remove('opened');
@@ -100,7 +100,7 @@ function updateTitle(index) {
 // global index for the imgTravel function
 currentIndex = 0;
 
-// onlickevent which gave you the previous picture and jumps to the end by 1/12
+// onlick event which gave you the previous picture and jumps to the end by 1/12
 function previous() {
   currentIndex--;
   if (currentIndex < 0) {
@@ -109,7 +109,7 @@ function previous() {
   imgTravel(currentIndex);
 }
 
-// onlickevent which gave you the next picture and jumps to the start by 12/12
+// onlick event which gave you the next picture and jumps to the start by 12/12
 function next() {
   currentIndex++;
   if (currentIndex > myImages.length - 1) {
