@@ -116,6 +116,7 @@ h1 {
 
 #showImage {
   height: 82.8%;
+  width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,6 +124,7 @@ h1 {
 
 #mainImagesInOverlay {
   max-height: 600px;
+  max-width: 1000px;
   ;
 }
 
@@ -147,7 +149,7 @@ h1 {
   border-width: 0;
 }
 
-.left-btn {
+.previous-btn {
   background-color: rgba(0, 0, 0, 0);
   border-width: 0;
   height: 40px;
@@ -165,7 +167,7 @@ h1 {
   filter: brightness(150%);
 }
 
-.right-btn {
+.next-btn {
   background-color: rgba(0, 0, 0, 0);
   border-width: 0;
   height: 40px;

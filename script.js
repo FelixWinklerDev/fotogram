@@ -24,7 +24,7 @@ let myTitles = [
   'Orkan vom Weltall',
   'Winterlandschaft am See',
   'Ente',
-  'Felix an nachdenklichen Nächten',
+  'Felix in nachdenklichen Nächten',
   'Vogel B',
 ];
 
@@ -71,4 +71,22 @@ function updateTitle(index) {
   let updateTitle = document.getElementById('image_title');
   let headerTitle = myTitles[index];
   updateTitle.innerText = `${headerTitle}`;
+}
+
+currentIndex = 0;
+
+function previous() {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = myImages.length - 1;
+  }
+  imgTravel(currentIndex);
+}
+
+function next() {
+  currentIndex++;
+  if (currentIndex > myImages.length - 1) {
+    currentIndex = 0;
+  }
+  imgTravel(currentIndex);
 }
