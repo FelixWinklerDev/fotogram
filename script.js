@@ -46,6 +46,9 @@ let myAltTextes = [
   'ein Schneeammer',
 ];
 
+// global index for the imgTravel function
+currentIndex = 0;
+
 // onload event which renders the Pictures in the main section
 function renderPictures(array) {
   let container = document.getElementById('photo_gallery');
@@ -58,11 +61,11 @@ function renderPictures(array) {
 }
 
 // onclick event which opens the dialog if you click a image
-function openDialog(rot) {
+function openDialog(image) {
   const dialogRef = document.getElementById('imageOverlay');
   dialogRef.showModal();
   dialogRef.classList.add('opened');
-  imgTravel(rot);
+  imgTravel(image);
 }
 
 // onclick event which closing the Dialog
@@ -73,13 +76,18 @@ function closeDialog() {
 }
 
 // adds the image from the array in the Dialog Main section
-function imgTravel(rot) {
+function imgTravel(image) {
   let overlayContainer = document.getElementById('showImage');
-  overlayContainer.innerHTML = /*html*/ `
-        <img id="mainImagesInOverlay" src="${myImages[rot]}" alt="${myAltTextes[rot]}">
+  overlayContainer.innerHTML = imgTravelTemplate(image);
+  updateCounter(image);
+  updateTitle(image);
+}
+
+//adds
+function imgTravelTemplate(image) {
+  return `
+        <img id="mainImagesInOverlay" src="${myImages[image]}" alt="${myAltTextes[image]}">
         `;
-  updateCounter(rot);
-  updateTitle(rot);
 }
 
 // adds the index in the p tag (it's working like a counter)
@@ -96,9 +104,6 @@ function updateTitle(index) {
   let headerTitle = myTitles[index];
   updateTitle.innerText = `${headerTitle}`;
 }
-
-// global index for the imgTravel function
-currentIndex = 0;
 
 // onlick event which gave you the previous picture and jumps to the end by 1/12
 function previous() {
